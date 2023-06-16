@@ -1,0 +1,57 @@
+Abstraction:- hideing the implementation and showing only functionality to the user.....
+
+Abstract class:--
+              
+			a class which is declared as an abstract keyword is known as abstract class
+            abstract class contains abstract methods and non abstract methods
+            it cannot be instiantied.
+            an abstract clss can contain static method and 
+            it can have final method which cannot be changed in sub class........
+			syntax--->>>
+			   abstract class class_name
+			   {
+			         //body
+			    }
+ abstract class cannot be intianted..
+      
+	  abstract class collage
+	  {
+	      //body
+	   }
+	   public class Main
+	   {
+	       public static void main(String args[])
+		   {
+		      Collage clg =new Collage();
+		    }
+	    }
+		
+   collage is abstract cannot be instiantied...
+   
+ ---------------Abstract Method-----------------------------------------------
+ an abstract method contains abstract keyword. it doesnot have any implementation
+ non abstract classes cannot  contain abstract methods...
+ 
+ 
+ abstract class Collage 
+{
+    abstract void clgname();
+}
+class Cmr extends Collage
+{
+  void clgname()
+  {
+      System.out.println("we are cmrec sturdents");
+  }
+}
+public class Main
+{
+    public static void main(String args[])
+    {
+        Cmr clg = new Cmr();
+        clg.clgname();
+        collage=temp;
+        temp =new Cmr();
+        temp.clgname();
+    }
+}
