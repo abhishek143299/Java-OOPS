@@ -1,0 +1,33 @@
+get keyword:--
+     The get method returns the value of the variable name ....get keyword is used......................
+
+set key word:---
+    the setter method will set the existis the data member in the class...set key word is used for this........ 
+
+class Test
+{
+    private int a=300;
+    private void display()
+    {
+        System.out.println("iam in display of test");
+        
+    }
+    int getvalue()
+    {
+        return this.a;
+    
+    }
+    void setvalue(int x)
+    {
+        this.a=x;
+    }
+}
+public class Main{
+    public static void main(String args[])
+    {
+        Test t=new Test();
+        System.out.println(t.getvalue());
+        t.setvalue(500);
+        System.out.println(t.getvalue());
+    }
+}
