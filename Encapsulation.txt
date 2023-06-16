@@ -1,0 +1,50 @@
+Encapsulation :
+* it will bind the data in a single unit.
+* to access the data inside encapsulated class we use getter or shutter method..
+
+Access specifers:
+    
+	1) public -- it can be access with in the class ,with in the subclass ,with in the package and outside the package..
+	   we use public keyword for it
+	
+	2) private -- it can access with in the class..
+	
+	3) protected-- it can be access with in class with in the sub class with in the package.
+ 
+    4)default -- if we didn't mention anything,it takes as default.It can access with in the class and package ...
+	
+
+------>>>>>>>>>>Example
+class Test
+{
+    public int a=50;
+    private int b=60;
+    protected int c=70;
+    public static void main(String args[])
+    {
+        Test t=new Test();
+        System.out.println(t.a);
+        System.out.println(t.b);
+        System.out.println(t.c);
+    }
+}
+
+
+------>>>>>>>>>>>Example-2:--------- we cannot access outside of the class when private key word is used..........----------
+
+class Test
+{
+    public int a=50;
+    private int b=60;
+    protected int c=70;
+}
+public class Main
+{
+    public static void main(String args[])
+    {
+        Test t=new Test();
+        System.out.println(t.a);
+        System.out.println(t.b);
+        System.out.println(t.c);
+    }
+}
