@@ -1,0 +1,66 @@
+POlymorphism :
+ it performs single operation in many ways 
+ 
+ polymorphism is achived in 2 ways
+ 1) compile time polymorphism(method overloading)
+ 2) run time polymorphism(method overriding)
+ ===========================================================================================================
+1) --------------------------------method overloading:----------------
+------>in a class method names are same but arguments are different.
+
+public class Cab
+{
+    void passangers()
+    {
+        System.out.println("no passangers");
+    }
+    void passangers(String p1)
+    {
+        System.out.println(p1);
+    }
+    void passangers(String p1 ,String p2)
+    {
+        System.out.println(p1+" "+p2);
+    }
+    public static void main(String args[])
+    {
+        Cab trip1=new Cab();
+        trip1.passangers();
+        trip1.passangers("Sunny");
+        trip1.passangers("sunny", "gutta");
+    }
+}
+ ========================================================================================================================================================================
+ 2)------------------------------------method overriding----------------------------------------------------
+ If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+ 
+ 
+ 
+ class Animal
+{
+ void shout()
+ {
+     System.out.println("shouting");
+ }
+}
+class Cat extends Animal
+{
+
+}
+class Dog extends Animal
+{
+ void shout()
+ {
+     System.out.println("bow boww");
+ }
+ public static void main(String args[])
+ {
+     Animal a=new Animal();
+     Cat c=new Cat();
+     Dog d=new Dog();
+     a.shout();
+     c.shout();
+     d.shout();
+     
+ }
+}
