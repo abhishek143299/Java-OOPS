@@ -1,0 +1,54 @@
+single level inheritance + multilevel inheritance
+
+import java.util.*;
+class Teacher
+{
+    void teach()
+    {
+        System.out.println("teaches how to handle guns");
+    }
+}
+class Student extends Teacher
+{
+    void study()
+    {
+        System.out.println("learning");
+    }
+}
+class Father
+{
+    void gun()
+    {
+        System.out.println("Father's gun");
+    }
+}
+
+class Son extends Father
+{
+    void ammo()
+    {
+        System.out.println("sons ammo 5.6");
+    }
+}
+class Son1 extends Father
+{
+    void ammo1()
+    {
+        System.out.println("sons ammo 9.8");
+    }
+    public static void main(String args[])
+    {
+        Father f=new Father();
+        Son s=new Son();
+        Son1 s1= new Son1();
+        Teacher t=new Teacher();
+        Student st=new Student();
+        f.gun();
+        s.gun();
+        s.ammo();
+        s1.ammo1();
+        t.teach();
+        st.teach();
+    }
+}
+
